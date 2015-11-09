@@ -62,6 +62,15 @@ a { color: #ff5a5f;}
 	background-color: #51CE7E;
 }
 
+.border_bottom {
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.border_top {
+	border-top: 1px solid #E6E6E6;
+
+}
+
 p.callout {
 	padding:15px;
 	background-color:#ECF8FF;
@@ -73,29 +82,17 @@ p.callout {
 }
 
 .notification_container {
-	float: left;
-    width: 100%;
-    margin-bottom: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
-.notification_counter {
-	border-radius: 25px; 
-	height: 25px;
-	width: 25px;
-	background-color: #ff5a5f;
-	text-align: center;
-	display: inline-block;
-}
-
-.notification_counter span {
-	position: relative;
-	top: 3px;
-	color: white;
-}
-
-.notification_text {
-	position: relative;
-	top: 3px;
+.notification {
+	font-weight: bold;
+    padding: 2px 5px;
+    background-color: #ff5a5f;
+    color: white;
+    margin-right: 5px;
+	border-radius: 2px;
 }
 
 table.social {
@@ -138,7 +135,9 @@ table.head-wrap {
 ------------------------------------- */
 table.body-wrap { 
 	width: 100%;
-	border: 1px solid #E6E6E6;
+	background: #FBFBFB;
+    border-top: 1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6;
 }
 
 
@@ -282,13 +281,13 @@ ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.s
 </style>
 
 <!-- HEADER -->
-<table class="head-wrap" bgcolor="#FFFFFF">
+<table class="head-wrap">
 	<tr>
 		<td></td>
-		<td class="header container" >
+		<td class="header container">
 				
 				<div class="content">
-				<table bgcolor="#FFFFFF">
+				<table>
 					<tr>
 						<td><img src="https://www.storywars.net/images/story_wars_logo_192x55.png" /></td>
 						<!-- td align="right"><h6 class="collapse">Basic</h6></td -->
@@ -303,7 +302,7 @@ ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.s
 
 
 <!-- BODY -->
-<table class="body-wrap" bgcolor="#FBFBFB">
+<table class="body-wrap">
 	<tr>
 		<td></td>
 		<td class="container">
@@ -312,11 +311,8 @@ ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.s
 			<table>
 				<tr>
 					<td>
-						<h3>Notification</h3>										
-						<div class="notification_container">
-							<div class="notification_counter"><span>1</span></div>
-							<span class="notification_text">new update</span>
-						</div>
+						<h3>Notification</h3>
+						<p class="notification_container"><span class="notification">1</span>new update</p>
 						<a class="btn btn--cta">See my notification</a>
 					</td>
 				</tr>
